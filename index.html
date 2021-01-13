@@ -4744,6 +4744,18 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript"></script>
+<!-- below adds the class names of elements in title format to everything on the page -->
+<script>
+    $(document).ready(function() {
+  const home = location.host;
+  const steMapLnk = ('*');
+  $(steMapLnk).each(function() {
+    $(this).css('text-transform', '');
+    $(this).attr('title', 'class names used are: ' + $(this).attr('class') + '');
 
+  })
+});
+
+</script>
 </body>
 </html>
